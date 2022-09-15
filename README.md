@@ -12,7 +12,7 @@ Contact:<br>
 Rogério Xavier de Azambuja<br>
 rogerio.xavier@farroupilha.ifrs.edu.br
 
-IFRS-Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul (www.ifrs.edu.br)<br>
+IFRS-Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul (<a href='www.ifrs.edu.br' target=_blank>www.ifrs.edu.br</a>)<br>
 UTAD-Universidade de Trás-os-Montes e Alto Douro/ECT-Escola de Ciências e Tecnologia (www.utad.pt)<br> 
 UAb-Universidade Aberta/DCeT-Departamento de Ciências e Tecnologias (www.uab.pt)<br>
  
