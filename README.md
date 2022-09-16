@@ -1,5 +1,5 @@
 # X-Wines
-A world wines dataset with user ratings for recommendation systems and general use.
+A world wines dataset with user ratings for recommendation systems and general purpose.
 
 This is an academic work with scientific relevance in the computing area that is interconnected with other areas of knowledge.
 
