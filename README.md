@@ -3,7 +3,7 @@ A world wines dataset with user ratings for recommendation systems and general p
 
 This is an academic work with scientific relevance in the computing area that is interconnected with other areas of knowledge.
 
-It offer a prepared, consistent and open data alternative for general use by softwares, especially in educational processes about machine learning using neural networks and recommender systems.
+It offer a well prepared, consistent and open data alternative for general use by softwares, especially in educational processes about machine learning using neural networks and recommender systems.
 
 It will soon be published in this space.
 
