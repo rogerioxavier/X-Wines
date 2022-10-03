@@ -1,3 +1,7 @@
-100,646 (100K) wines containing all selected attributes.
-21,013,536 (21M) ratings 5-stars ⊂ {1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5}
-1,056,079 (1M) users registred into specialized platforms.
+X-Wines: A wine dataset for recommender systems, machine learning and other software applications
+
+•	100,646 (100K) wines instances containing 17 selected attributes.
+•	21,013,536 (21M) ratings 5-stars instances, containing date and value ⊂ {1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5}
+•	1,056,079 (1M) users registered into specialized platforms.
+
+status: Consistent, publication soon.
