@@ -1,9 +1,9 @@
 # X-Wines
-A world wines dataset with user ratings for recommendation systems and general purpose.
+A world wine dataset with user ratings for recommendation systems and general purpose.
 
 This is an academic work with scientific relevance in the computing area that is interconnected with other areas of knowledge.
 
-It offer a well prepared, consistent and open data alternative for general use by softwares, especially in educational processes through scientific experimentation about machine learning using neural networks and recommender systems.
+It offer a well prepared, consistent and open data alternative for general use by softwares, especially in educational processes and research, through scientific experimentation about recommender systems and machine learning using neural networks.
 
 It will soon be published in this space.
 
