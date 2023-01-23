@@ -9,7 +9,7 @@ It offer a pre-processed, consistent and open data alternative for general use b
 ### It will soon be published in this space.
 
 ### Citation Policy:
-If you publish material based on X-Wines dataset obtained from this or another repository, then, in your references the article below must be mandatory cited.
+If you publish material based on X-Wines dataset obtained from this or another repository, then, in your references the [paper](https://www.mdpi.com/2504-2289/7/1/20) below must be mandatory cited.
 Additionally, if you wish to include in your acknowledgements, please note the support you received by using this dataset.
 
 <u>MDPI and ACS Style</u>:
