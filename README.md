@@ -1,3 +1,4 @@
+![X-Wines Dataset](x-wine-logo.png)
 # X-Wines
 A world wine dataset with 5-stars user ratings for wider free use.
 
