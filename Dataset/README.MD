@@ -6,10 +6,10 @@ It is published under free license for wider use.
 ### Contents:
 
 •	100,646 (100K) wines instances containing 17 selected attributes.<br>
-•	21,013,536 (21M) ratings 5-stars instances, containing date and value ⊂ {1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5}<br>
-•	1,056,079 (1M) users registered into wine specialized platforms.<br>
+•	21,013,536 (21M) ratings 5-stars instances, containing date and value a 1–5 scale ⊂ {1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5}<br>
+•	1,056,079 (1M) anonymized users.<br>
 
-### Version:
+### Versions:
 ```
 Version     # Wines    # Ratings     # Users  # Wine Countries   # Wine Types  Multiple user-wine rating
 Test           100        1,000         636          17                6                 No
