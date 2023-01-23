@@ -11,9 +11,9 @@ It is published under free license for wider use.
 
 ### Versions:
 ```
-Version     # Wines    # Ratings     # Users  # Wine Countries   # Wine Types  Multiple user-wine rating
-Test           100        1,000         636          17                6                 No
-Slim         1,007      150,000      10,561          31	               6                 No
-Full       100,646   21,013,536   1,056,079          62                6                 Yes
+Version     # Wines   # Wine Types    # Wine Countries   # Ratings      # Users   Multiple user-wine rating
+Test           100          6               17              1,000          636             No
+Slim         1,007          6               31            150,000       10,561             No
+Full       100,646          6               62         21,013,536    1,056,079             Yes
 ```
 status: Consistent, publication soon.
