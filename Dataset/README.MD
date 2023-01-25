@@ -1,5 +1,5 @@
 # X-Wines Dataset
-X-Wines is a world wine dataset with 5-stars user ratings for recommender systems, machine learning, and other research purpose applications.
+X-Wines is a world wine dataset with 5-stars user ratings for recommender systems, machine learning, and other research purpose.
 It is published under free license for wider use.
 [Paper](https://www.mdpi.com/2504-2289/7/1/20) must be mandatory cited in publications that make use of this dataset, where you can also find additional information.
 
@@ -10,6 +10,8 @@ It is published under free license for wider use.
 •	1,056,079 (1M) anonymized users.<br>
 
 ### Versions:
+
+There are 3 versions: Full ⊂ Slim ⊂ Test. 
 ```
 Version     # Wines   # Wine Types    # Wine Countries   # Ratings      # Users   Multiple user-wine rating
 Test           100          6               17              1,000          636             No
