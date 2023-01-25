@@ -20,7 +20,7 @@ Full       100,646          6               62         21,013,536    1,056,079  
 ```
 
 ### Usage policy:
-We are not responsible for the accuracy of the information available on open Web and collected in 2022. Responsibility for the use of this free dataset belongs to its users.
+We are not responsible for the accuracy of the information available on the open Web collected in 2022. Responsibility for the use of this free dataset belongs to its users.
 
 ### Status:
 Consistent, publication soon.
