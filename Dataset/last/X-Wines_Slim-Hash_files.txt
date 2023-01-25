@@ -1,7 +1,7 @@
 XWines_Slim_1K_wines_150K_ratings.zip MD5: dba6eb1120376d05c4a85607d01498ab SHA256: 6ffd494e53eb4098b0e9cf38ffac6322967d6b0b8b5106a833f482bd58db9ebf
     XWines_Slim_1K_wines.csv MD5: 54d6b9b0a238901d02bea94c4b676cc5 SHA256: 04d03b321108706f59c4c1067938ac0468382edf0f071110f33d1eaf0c884666
     XWines_Slim_150K_ratings.csv MD5: 8ef74bb1b960b4aaedf440d13d31e17b SHA256: 4eead4218c53418c2660c6c260b9f9ddf7d5ed30e16879d9c6e7081ae6c9c6c6
-/XWines_Slim_1K_images (25MB is the supported file size!)
+/XWines_Slim_1K_images/ (25MB is the supported file size!)
     XWines_Slim_1K_images.zip MD5: 47ea89fff35aeb36ff88b66a9c1bce80 SHA256: 5322716bc7ba625d3f6c4465ae33c8fd3ec033b88aa841f2c65b67b0db1f52c4
     XWines_Slim_1K_images.z01 MD5: 3ad959020c97096d5a73c8014de3f31c SHA256: a0058f2df77ba015491b4d2e47b89a40410a76d6c0dc31810a69fa4067ec1316
     
