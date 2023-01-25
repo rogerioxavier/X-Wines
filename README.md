@@ -6,7 +6,7 @@ This is an academic work with scientific relevance in the computing area that is
 
 It offer a pre-processed, consistent and open data alternative for general use by softwares, especially in educational processes and research, through scientific experimentation about recommender systems and machine learning using neural networks.
 
-### It will soon be published in this space.
+### It is being published in this space in the Dataset folder.
 
 ### Citation Policy:
 If you publish material based on X-Wines dataset obtained from this or another repository, then, in your references the [paper](https://www.mdpi.com/2504-2289/7/1/20) below must be mandatory cited.
