@@ -40,9 +40,10 @@ DOI = {10.3390/bdcc7010020}
 ```
 This will help others to obtain the X-Wines dataset for wider free use and replicate your experiments.
 
+### Collaborative Platform:
 ![Collaborative Platform](interface.png)
 X-Wines is an academic work with scientific relevance in the computing area that is interconnected with other areas of knowledge. Please, access the <b>collaborative platform</b> and have fun among the wines experience: <a href="https://sites.google.com/farroupilha.ifrs.edu.br/xwines" target="_blank">https://sites.google.com/farroupilha.ifrs.edu.br/xwines</a>.
-
+<img src="xwines_06.png" alt="Wines characteristics" style="width=5%; height=5%;" /><img src="xwines_08.png" alt="Wines ratings" style="width=5%; height=5%;" />
 
 Contact:<br>
 Prof. Rogério Xavier de Azambuja<br>
