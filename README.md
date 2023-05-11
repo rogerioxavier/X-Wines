@@ -42,9 +42,9 @@ This will help others to obtain the X-Wines dataset for wider free use and repli
 
 ### Collaborative Platform:
 ![Collaborative Platform](interface.png)
-X-Wines is an academic work with scientific relevance in the computing area that is interconnected with other areas of knowledge. Please, access the <b>collaborative platform</b> and have fun among the wines experience: <a href="https://sites.google.com/farroupilha.ifrs.edu.br/xwines" target="_blank">https://sites.google.com/farroupilha.ifrs.edu.br/xwines</a>.
+X-Wines is an academic work with scientific relevance in the computing area that is interconnected with other areas of knowledge. Please, access the <b>collaborative platform</b> and have fun among the wines experience: <a href="https://sites.google.com/farroupilha.ifrs.edu.br/xwines" target="_blank">https://sites.google.com/farroupilha.ifrs.edu.br/xwines</a>. There are 100.646 wines from 62 countries and 21 million ratings.
 
-<img src="xwines_06.png" alt="Wines characteristics" style="width:50%; height:50%;" /><img src="xwines_08.png" alt="Wines ratings" style="width:50%; height:50%;" />
+<img src="xwines_06.png" alt="Wines characteristics" style="width:33%; height:33%;" /><img src="xwines_08.png" alt="Wines ratings" style="width:33%; height:33%;" /><img src="interface02.png" alt="Wines ratings" style="width:33%; height:33%;" />
 
 Contact:<br>
 Prof. Rogério Xavier de Azambuja<br>
