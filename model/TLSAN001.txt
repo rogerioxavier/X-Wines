@@ -1,0 +1,771 @@
+# TLSAN
+
+Loading data..
+{
+    "Ls": 10,
+    "cateid_embedding_size": 32,
+    "cuda_visible_devices": "3",
+    "display_freq": 100,
+    "dropout": 0.0,
+    "eval_freq": 1000,
+    "from_scratch": true,
+    "h": false,
+    "help": false,
+    "helpfull": false,
+    "helpshort": false,
+    "hidden_units": 64,
+    "itemid_embedding_size": 32,
+    "learning_rate": 1.0,
+    "max_epochs": 20,
+    "max_gradient_norm": 5.0,
+    "model_dir": "save_path",
+    "num_blocks": 1,
+    "num_heads": 8,
+    "optimizer": "sgd",
+    "per_process_gpu_memory_fraction": 0.0,
+    "regulation_rate": 5e-05,
+    "test_batch_size": 128,
+    "train_batch_size": 32,
+    "userid_embedding_size": 32,
+    "user_count": 8410,
+    "item_count": 855,
+    "cate_count": 6
+}
+All global variables:
+         <tf.Variable 'gamma_parameter:0' shape=() dtype=float32_ref> trainable
+         <tf.Variable 'item_emb:0' shape=(855, 32) dtype=float32_ref> trainable
+         <tf.Variable 'item_b:0' shape=(855,) dtype=float32_ref> trainable
+         <tf.Variable 'user_emb:0' shape=(8410, 32) dtype=float32_ref> trainable
+         <tf.Variable 'usert_emb:0' shape=(8410, 5) dtype=float32_ref> trainable
+         <tf.Variable 'cate_emb:0' shape=(6, 32) dtype=float32_ref> trainable
+         <tf.Variable 'all/long_term/num_blocks0_0/long_term_layer/feature_wise_attention1/bn_dense_map1/linear_map/W:0' shape=(8, 8) dtype=float32_ref> trainable
+         <tf.Variable 'all/long_term/num_blocks0_0/long_term_layer/feature_wise_attention1/bn_dense_map1/linear_map/bias:0' shape=(8,) dtype=float32_ref> trainable
+         <tf.Variable 'all/long_term/num_blocks0_0/long_term_layer/feature_wise_attention1/bn_dense_map2/linear_map/W:0' shape=(8, 8) dtype=float32_ref> trainable
+         <tf.Variable 'all/long_term/num_blocks0_0/long_term_layer/feature_wise_attention1/bn_dense_map2/linear_map/bias:0' shape=(8,) dtype=float32_ref> trainable
+         <tf.Variable 'all/long_term/num_blocks0_0/dense/kernel:0' shape=(64, 64) dtype=float32_ref> trainable
+         <tf.Variable 'all/long_term/num_blocks0_0/dense/bias:0' shape=(64,) dtype=float32_ref> trainable
+         <tf.Variable 'all/short_term/num_blocks1_0/short_term_layer/feature_wise_attention2/bn_dense_map1/linear_map/W:0' shape=(8, 8) dtype=float32_ref> trainable
+         <tf.Variable 'all/short_term/num_blocks1_0/short_term_layer/feature_wise_attention2/bn_dense_map1/linear_map/bias:0' shape=(8,) dtype=float32_ref> trainable
+         <tf.Variable 'all/short_term/num_blocks1_0/short_term_layer/feature_wise_attention2/bn_dense_map2/linear_map/W:0' shape=(8, 8) dtype=float32_ref> trainable
+         <tf.Variable 'all/short_term/num_blocks1_0/short_term_layer/feature_wise_attention2/bn_dense_map2/linear_map/bias:0' shape=(8,) dtype=float32_ref> trainable
+         <tf.Variable 'global_step:0' shape=() dtype=int32_ref>
+         <tf.Variable 'global_epoch_step:0' shape=() dtype=int32_ref>
+Created new model parameters..
+Init finish.    Cost time: 2.42s
+Init AUC: 0.8131
+Init precision:
+@1 = 0.5697 @10 = 0.0587 @20 = 0.0294 @30 = 0.0197 @40 = 0.0148 @50 = 0.0119
+Init recall:
+@1 = 0.5697 @10 = 0.5867 @20 = 0.5887 @30 = 0.5906 @40 = 0.5917 @50 = 0.5927
+Training..      max_epochs: 20  epoch_size: 6466
+Epoch 0 Global_step 1000        Train_loss: 1.6257      Eval_auc: 0.8222
+Precision:
+@1 = 0.2919 @10 = 0.0339 @20 = 0.0190 @30 = 0.0135 @40 = 0.0109 @50 = 0.0091
+Recall:
+@1 = 0.2919 @10 = 0.3389 @20 = 0.3800 @30 = 0.4043 @40 = 0.4372 @50 = 0.4545
+model saved at save_path/TLSAN--1000
+Epoch 0 Global_step 2000        Train_loss: 1.4577      Eval_auc: 0.8158
+Precision:
+@1 = 0.1964 @10 = 0.0253 @20 = 0.0153 @30 = 0.0112 @40 = 0.0094 @50 = 0.0080
+Recall:
+@1 = 0.1964 @10 = 0.2532 @20 = 0.3052 @30 = 0.3346 @40 = 0.3756 @50 = 0.4020
+Epoch 0 Global_step 3000        Train_loss: 1.3666      Eval_auc: 0.8272
+Precision:
+@1 = 0.1491 @10 = 0.0220 @20 = 0.0136 @30 = 0.0104 @40 = 0.0087 @50 = 0.0076
+Recall:
+@1 = 0.1491 @10 = 0.2202 @20 = 0.2725 @30 = 0.3116 @40 = 0.3489 @50 = 0.3812
+model saved at save_path/TLSAN--3000
+Epoch 0 Global_step 4000        Train_loss: 1.2880      Eval_auc: 0.8221
+Precision:
+@1 = 0.1210 @10 = 0.0190 @20 = 0.0123 @30 = 0.0098 @40 = 0.0083 @50 = 0.0074
+Recall:
+@1 = 0.1210 @10 = 0.1895 @20 = 0.2454 @30 = 0.2932 @40 = 0.3324 @50 = 0.3690
+Epoch 0 Global_step 5000        Train_loss: 1.2127      Eval_auc: 0.8212
+Precision:
+@1 = 0.1029 @10 = 0.0172 @20 = 0.0114 @30 = 0.0093 @40 = 0.0080 @50 = 0.0072
+Recall:
+@1 = 0.1029 @10 = 0.1717 @20 = 0.2276 @30 = 0.2803 @40 = 0.3206 @50 = 0.3617
+Epoch 0 Global_step 6000        Train_loss: 1.1535      Eval_auc: 0.8290
+Precision:
+@1 = 0.0895 @10 = 0.0160 @20 = 0.0110 @30 = 0.0091 @40 = 0.0078 @50 = 0.0072
+Recall:
+@1 = 0.0895 @10 = 0.1601 @20 = 0.2199 @30 = 0.2723 @40 = 0.3133 @50 = 0.3601
+model saved at save_path/TLSAN--6000
+Epoch 0 DONE    Cost time: 50.87
+Epoch 1 Global_step 7000        Train_loss: 1.0945      Eval_auc: 0.8228
+Precision:
+@1 = 0.0791 @10 = 0.0152 @20 = 0.0107 @30 = 0.0089 @40 = 0.0077 @50 = 0.0071
+Recall:
+@1 = 0.0791 @10 = 0.1520 @20 = 0.2145 @30 = 0.2672 @40 = 0.3090 @50 = 0.3561
+Epoch 1 Global_step 8000        Train_loss: 1.0411      Eval_auc: 0.8203
+Precision:
+@1 = 0.0718 @10 = 0.0146 @20 = 0.0106 @30 = 0.0088 @40 = 0.0076 @50 = 0.0071
+Recall:
+@1 = 0.0718 @10 = 0.1458 @20 = 0.2118 @30 = 0.2633 @40 = 0.3050 @50 = 0.3534
+Epoch 1 Global_step 9000        Train_loss: 0.9888      Eval_auc: 0.8263
+Precision:
+@1 = 0.0653 @10 = 0.0141 @20 = 0.0104 @30 = 0.0087 @40 = 0.0075 @50 = 0.0070
+Recall:
+@1 = 0.0653 @10 = 0.1407 @20 = 0.2087 @30 = 0.2611 @40 = 0.3017 @50 = 0.3514
+Epoch 1 Global_step 10000       Train_loss: 0.9487      Eval_auc: 0.8257
+Precision:
+@1 = 0.0603 @10 = 0.0137 @20 = 0.0103 @30 = 0.0087 @40 = 0.0075 @50 = 0.0070
+Recall:
+@1 = 0.0603 @10 = 0.1372 @20 = 0.2067 @30 = 0.2602 @40 = 0.3009 @50 = 0.3512
+Epoch 1 Global_step 11000       Train_loss: 0.9117      Eval_auc: 0.8277
+Precision:
+@1 = 0.0560 @10 = 0.0133 @20 = 0.0102 @30 = 0.0086 @40 = 0.0075 @50 = 0.0070
+Recall:
+@1 = 0.0560 @10 = 0.1329 @20 = 0.2040 @30 = 0.2593 @40 = 0.3016 @50 = 0.3523
+Epoch 1 Global_step 12000       Train_loss: 0.8713      Eval_auc: 0.8306
+Precision:
+@1 = 0.0523 @10 = 0.0131 @20 = 0.0101 @30 = 0.0086 @40 = 0.0075 @50 = 0.0071
+Recall:
+@1 = 0.0523 @10 = 0.1310 @20 = 0.2026 @30 = 0.2579 @40 = 0.3017 @50 = 0.3534
+model saved at save_path/TLSAN--12000
+Epoch 1 DONE    Cost time: 99.55
+Epoch 2 Global_step 13000       Train_loss: 0.8342      Eval_auc: 0.8338
+Precision:
+@1 = 0.0496 @10 = 0.0132 @20 = 0.0102 @30 = 0.0087 @40 = 0.0076 @50 = 0.0071
+Recall:
+@1 = 0.0496 @10 = 0.1317 @20 = 0.2038 @30 = 0.2612 @40 = 0.3052 @50 = 0.3559
+model saved at save_path/TLSAN--13000
+Epoch 2 Global_step 14000       Train_loss: 0.7985      Eval_auc: 0.8648
+Precision:
+@1 = 0.0478 @10 = 0.0133 @20 = 0.0104 @30 = 0.0090 @40 = 0.0079 @50 = 0.0073
+Recall:
+@1 = 0.0478 @10 = 0.1334 @20 = 0.2083 @30 = 0.2695 @40 = 0.3142 @50 = 0.3640
+model saved at save_path/TLSAN--14000
+Epoch 2 Global_step 15000       Train_loss: 0.7661      Eval_auc: 0.8690
+Precision:
+@1 = 0.0464 @10 = 0.0135 @20 = 0.0107 @30 = 0.0092 @40 = 0.0081 @50 = 0.0074
+Recall:
+@1 = 0.0464 @10 = 0.1352 @20 = 0.2144 @30 = 0.2774 @40 = 0.3227 @50 = 0.3725
+model saved at save_path/TLSAN--15000
+Epoch 2 Global_step 16000       Train_loss: 0.7403      Eval_auc: 0.8780
+Precision:
+@1 = 0.0456 @10 = 0.0139 @20 = 0.0111 @30 = 0.0095 @40 = 0.0083 @50 = 0.0076
+Recall:
+@1 = 0.0456 @10 = 0.1392 @20 = 0.2211 @30 = 0.2849 @40 = 0.3311 @50 = 0.3807
+model saved at save_path/TLSAN--16000
+Epoch 2 Global_step 17000       Train_loss: 0.7150      Eval_auc: 0.8809
+Precision:
+@1 = 0.0443 @10 = 0.0142 @20 = 0.0113 @30 = 0.0097 @40 = 0.0084 @50 = 0.0077
+Recall:
+@1 = 0.0443 @10 = 0.1416 @20 = 0.2255 @30 = 0.2906 @40 = 0.3378 @50 = 0.3872
+model saved at save_path/TLSAN--17000
+Epoch 2 Global_step 18000       Train_loss: 0.6816      Eval_auc: 0.8729
+Precision:
+@1 = 0.0432 @10 = 0.0142 @20 = 0.0114 @30 = 0.0099 @40 = 0.0086 @50 = 0.0079
+Recall:
+@1 = 0.0432 @10 = 0.1420 @20 = 0.2279 @30 = 0.2957 @40 = 0.3434 @50 = 0.3927
+Epoch 2 Global_step 19000       Train_loss: 0.6669      Eval_auc: 0.8767
+Precision:
+@1 = 0.0416 @10 = 0.0144 @20 = 0.0115 @30 = 0.0100 @40 = 0.0087 @50 = 0.0080
+Recall:
+@1 = 0.0416 @10 = 0.1445 @20 = 0.2306 @30 = 0.2997 @40 = 0.3484 @50 = 0.3978
+Epoch 2 DONE    Cost time: 154.66
+Epoch 3 Global_step 20000       Train_loss: 0.6498      Eval_auc: 0.8809
+Precision:
+@1 = 0.0414 @10 = 0.0147 @20 = 0.0117 @30 = 0.0102 @40 = 0.0088 @50 = 0.0081
+Recall:
+@1 = 0.0414 @10 = 0.1467 @20 = 0.2344 @30 = 0.3050 @40 = 0.3540 @50 = 0.4031
+Epoch 3 Global_step 21000       Train_loss: 0.6298      Eval_auc: 0.8787
+Precision:
+@1 = 0.0407 @10 = 0.0149 @20 = 0.0119 @30 = 0.0103 @40 = 0.0090 @50 = 0.0081
+Recall:
+@1 = 0.0407 @10 = 0.1493 @20 = 0.2378 @30 = 0.3087 @40 = 0.3584 @50 = 0.4072
+Epoch 3 Global_step 22000       Train_loss: 0.6175      Eval_auc: 0.8790
+Precision:
+@1 = 0.0405 @10 = 0.0152 @20 = 0.0121 @30 = 0.0104 @40 = 0.0091 @50 = 0.0082
+Recall:
+@1 = 0.0405 @10 = 0.1520 @20 = 0.2419 @30 = 0.3129 @40 = 0.3627 @50 = 0.4116
+Epoch 3 Global_step 23000       Train_loss: 0.6019      Eval_auc: 0.8849
+Precision:
+@1 = 0.0405 @10 = 0.0154 @20 = 0.0123 @30 = 0.0106 @40 = 0.0092 @50 = 0.0083
+Recall:
+@1 = 0.0405 @10 = 0.1543 @20 = 0.2454 @30 = 0.3166 @40 = 0.3674 @50 = 0.4168
+model saved at save_path/TLSAN--23000
+Epoch 3 Global_step 24000       Train_loss: 0.5975      Eval_auc: 0.8917
+Precision:
+@1 = 0.0399 @10 = 0.0158 @20 = 0.0125 @30 = 0.0107 @40 = 0.0093 @50 = 0.0084
+Recall:
+@1 = 0.0399 @10 = 0.1579 @20 = 0.2502 @30 = 0.3220 @40 = 0.3736 @50 = 0.4224
+model saved at save_path/TLSAN--24000
+Epoch 3 Global_step 25000       Train_loss: 0.5816      Eval_auc: 0.8875
+Precision:
+@1 = 0.0395 @10 = 0.0161 @20 = 0.0127 @30 = 0.0109 @40 = 0.0095 @50 = 0.0086
+Recall:
+@1 = 0.0395 @10 = 0.1609 @20 = 0.2541 @30 = 0.3260 @40 = 0.3781 @50 = 0.4276
+Epoch 3 DONE    Cost time: 204.75
+Epoch 4 Global_step 26000       Train_loss: 0.5694      Eval_auc: 0.8904
+Precision:
+@1 = 0.0396 @10 = 0.0164 @20 = 0.0129 @30 = 0.0110 @40 = 0.0096 @50 = 0.0086
+Recall:
+@1 = 0.0396 @10 = 0.1639 @20 = 0.2582 @30 = 0.3309 @40 = 0.3830 @50 = 0.4323
+Epoch 4 Global_step 27000       Train_loss: 0.5539      Eval_auc: 0.8911
+Precision:
+@1 = 0.0400 @10 = 0.0167 @20 = 0.0131 @30 = 0.0112 @40 = 0.0097 @50 = 0.0087
+Recall:
+@1 = 0.0400 @10 = 0.1672 @20 = 0.2625 @30 = 0.3354 @40 = 0.3877 @50 = 0.4368
+Epoch 4 Global_step 28000       Train_loss: 0.5507      Eval_auc: 0.8971
+Precision:
+@1 = 0.0399 @10 = 0.0171 @20 = 0.0134 @30 = 0.0113 @40 = 0.0098 @50 = 0.0088
+Recall:
+@1 = 0.0399 @10 = 0.1706 @20 = 0.2671 @30 = 0.3404 @40 = 0.3929 @50 = 0.4417
+model saved at save_path/TLSAN--28000
+Epoch 4 Global_step 29000       Train_loss: 0.5456      Eval_auc: 0.9007
+Precision:
+@1 = 0.0404 @10 = 0.0174 @20 = 0.0136 @30 = 0.0115 @40 = 0.0100 @50 = 0.0089
+Recall:
+@1 = 0.0404 @10 = 0.1740 @20 = 0.2718 @30 = 0.3453 @40 = 0.3980 @50 = 0.4467
+model saved at save_path/TLSAN--29000
+Epoch 4 Global_step 30000       Train_loss: 0.5428      Eval_auc: 0.8996
+Precision:
+@1 = 0.0414 @10 = 0.0178 @20 = 0.0138 @30 = 0.0117 @40 = 0.0101 @50 = 0.0090
+Recall:
+@1 = 0.0414 @10 = 0.1776 @20 = 0.2760 @30 = 0.3499 @40 = 0.4031 @50 = 0.4515
+Epoch 4 Global_step 31000       Train_loss: 0.5374      Eval_auc: 0.9014
+Precision:
+@1 = 0.0421 @10 = 0.0181 @20 = 0.0140 @30 = 0.0118 @40 = 0.0102 @50 = 0.0091
+Recall:
+@1 = 0.0421 @10 = 0.1814 @20 = 0.2801 @30 = 0.3542 @40 = 0.4079 @50 = 0.4562
+model saved at save_path/TLSAN--31000
+Epoch 4 Global_step 32000       Train_loss: 0.5318      Eval_auc: 0.9030
+Precision:
+@1 = 0.0422 @10 = 0.0184 @20 = 0.0142 @30 = 0.0119 @40 = 0.0103 @50 = 0.0092
+Recall:
+@1 = 0.0422 @10 = 0.1845 @20 = 0.2840 @30 = 0.3582 @40 = 0.4122 @50 = 0.4605
+model saved at save_path/TLSAN--32000
+Epoch 4 DONE    Cost time: 259.59
+Epoch 5 Global_step 33000       Train_loss: 0.5129      Eval_auc: 0.9070
+Precision:
+@1 = 0.0432 @10 = 0.0188 @20 = 0.0144 @30 = 0.0121 @40 = 0.0104 @50 = 0.0093
+Recall:
+@1 = 0.0432 @10 = 0.1880 @20 = 0.2879 @30 = 0.3622 @40 = 0.4163 @50 = 0.4645
+model saved at save_path/TLSAN--33000
+Epoch 5 Global_step 34000       Train_loss: 0.5109      Eval_auc: 0.8987
+Precision:
+@1 = 0.0440 @10 = 0.0190 @20 = 0.0145 @30 = 0.0122 @40 = 0.0105 @50 = 0.0094
+Recall:
+@1 = 0.0440 @10 = 0.1904 @20 = 0.2909 @30 = 0.3656 @40 = 0.4199 @50 = 0.4681
+Epoch 5 Global_step 35000       Train_loss: 0.5099      Eval_auc: 0.9115
+Precision:
+@1 = 0.0450 @10 = 0.0194 @20 = 0.0147 @30 = 0.0123 @40 = 0.0106 @50 = 0.0094
+Recall:
+@1 = 0.0450 @10 = 0.1939 @20 = 0.2948 @30 = 0.3696 @40 = 0.4240 @50 = 0.4721
+model saved at save_path/TLSAN--35000
+Epoch 5 Global_step 36000       Train_loss: 0.5100      Eval_auc: 0.9137
+Precision:
+@1 = 0.0461 @10 = 0.0197 @20 = 0.0149 @30 = 0.0125 @40 = 0.0107 @50 = 0.0095
+Recall:
+@1 = 0.0461 @10 = 0.1970 @20 = 0.2986 @30 = 0.3737 @40 = 0.4280 @50 = 0.4760
+model saved at save_path/TLSAN--36000
+Epoch 5 Global_step 37000       Train_loss: 0.5101      Eval_auc: 0.9155
+Precision:
+@1 = 0.0473 @10 = 0.0201 @20 = 0.0151 @30 = 0.0126 @40 = 0.0108 @50 = 0.0096
+Recall:
+@1 = 0.0473 @10 = 0.2008 @20 = 0.3029 @30 = 0.3780 @40 = 0.4325 @50 = 0.4802
+model saved at save_path/TLSAN--37000
+Epoch 5 Global_step 38000       Train_loss: 0.5113      Eval_auc: 0.9119
+Precision:
+@1 = 0.0482 @10 = 0.0205 @20 = 0.0153 @30 = 0.0127 @40 = 0.0109 @50 = 0.0097
+Recall:
+@1 = 0.0482 @10 = 0.2045 @20 = 0.3067 @30 = 0.3816 @40 = 0.4361 @50 = 0.4838
+Epoch 5 DONE    Cost time: 312.64
+Epoch 6 Global_step 39000       Train_loss: 0.5028      Eval_auc: 0.9132
+Precision:
+@1 = 0.0495 @10 = 0.0207 @20 = 0.0155 @30 = 0.0128 @40 = 0.0110 @50 = 0.0097
+Recall:
+@1 = 0.0495 @10 = 0.2074 @20 = 0.3102 @30 = 0.3849 @40 = 0.4394 @50 = 0.4871
+Epoch 6 Global_step 40000       Train_loss: 0.4896      Eval_auc: 0.9143
+Precision:
+@1 = 0.0508 @10 = 0.0211 @20 = 0.0157 @30 = 0.0129 @40 = 0.0111 @50 = 0.0098
+Recall:
+@1 = 0.0508 @10 = 0.2105 @20 = 0.3137 @30 = 0.3885 @40 = 0.4430 @50 = 0.4904
+Epoch 6 Global_step 41000       Train_loss: 0.4899      Eval_auc: 0.9212
+Precision:
+@1 = 0.0519 @10 = 0.0214 @20 = 0.0159 @30 = 0.0131 @40 = 0.0112 @50 = 0.0099
+Recall:
+@1 = 0.0519 @10 = 0.2141 @20 = 0.3177 @30 = 0.3927 @40 = 0.4470 @50 = 0.4943
+model saved at save_path/TLSAN--41000
+Epoch 6 Global_step 42000       Train_loss: 0.4918      Eval_auc: 0.9202
+Precision:
+@1 = 0.0528 @10 = 0.0217 @20 = 0.0161 @30 = 0.0132 @40 = 0.0113 @50 = 0.0100
+Recall:
+@1 = 0.0528 @10 = 0.2173 @20 = 0.3214 @30 = 0.3965 @40 = 0.4508 @50 = 0.4978
+Epoch 6 Global_step 43000       Train_loss: 0.5009      Eval_auc: 0.9175
+Precision:
+@1 = 0.0544 @10 = 0.0221 @20 = 0.0162 @30 = 0.0133 @40 = 0.0114 @50 = 0.0100
+Recall:
+@1 = 0.0544 @10 = 0.2209 @20 = 0.3248 @30 = 0.3997 @40 = 0.4541 @50 = 0.5012
+Epoch 6 Global_step 44000       Train_loss: 0.5086      Eval_auc: 0.9213
+Precision:
+@1 = 0.0557 @10 = 0.0224 @20 = 0.0164 @30 = 0.0134 @40 = 0.0114 @50 = 0.0101
+Recall:
+@1 = 0.0557 @10 = 0.2240 @20 = 0.3282 @30 = 0.4031 @40 = 0.4573 @50 = 0.5043
+model saved at save_path/TLSAN--44000
+Epoch 6 Global_step 45000       Train_loss: 0.5043      Eval_auc: 0.9228
+Precision:
+@1 = 0.0568 @10 = 0.0227 @20 = 0.0166 @30 = 0.0135 @40 = 0.0115 @50 = 0.0101
+Recall:
+@1 = 0.0568 @10 = 0.2274 @20 = 0.3312 @30 = 0.4062 @40 = 0.4604 @50 = 0.5074
+model saved at save_path/TLSAN--45000
+Epoch 6 DONE    Cost time: 366.65
+Epoch 7 Global_step 46000       Train_loss: 0.4781      Eval_auc: 0.9174
+Precision:
+@1 = 0.0575 @10 = 0.0230 @20 = 0.0167 @30 = 0.0136 @40 = 0.0116 @50 = 0.0102
+Recall:
+@1 = 0.0575 @10 = 0.2298 @20 = 0.3339 @30 = 0.4089 @40 = 0.4632 @50 = 0.5101
+Epoch 7 Global_step 47000       Train_loss: 0.4790      Eval_auc: 0.9202
+Precision:
+@1 = 0.0583 @10 = 0.0233 @20 = 0.0168 @30 = 0.0137 @40 = 0.0117 @50 = 0.0103
+Recall:
+@1 = 0.0583 @10 = 0.2325 @20 = 0.3369 @30 = 0.4118 @40 = 0.4663 @50 = 0.5131
+Epoch 7 Global_step 48000       Train_loss: 0.4909      Eval_auc: 0.9202
+Precision:
+@1 = 0.0598 @10 = 0.0236 @20 = 0.0170 @30 = 0.0138 @40 = 0.0117 @50 = 0.0103
+Recall:
+@1 = 0.0598 @10 = 0.2357 @20 = 0.3400 @30 = 0.4148 @40 = 0.4691 @50 = 0.5158
+Epoch 7 Global_step 49000       Train_loss: 0.5025      Eval_auc: 0.9252
+Precision:
+@1 = 0.0612 @10 = 0.0239 @20 = 0.0172 @30 = 0.0139 @40 = 0.0118 @50 = 0.0104
+Recall:
+@1 = 0.0612 @10 = 0.2391 @20 = 0.3434 @30 = 0.4180 @40 = 0.4723 @50 = 0.5190
+model saved at save_path/TLSAN--49000
+Epoch 7 Global_step 50000       Train_loss: 0.5068      Eval_auc: 0.9295
+Precision:
+@1 = 0.0624 @10 = 0.0243 @20 = 0.0173 @30 = 0.0141 @40 = 0.0119 @50 = 0.0104
+Recall:
+@1 = 0.0624 @10 = 0.2426 @20 = 0.3470 @30 = 0.4216 @40 = 0.4758 @50 = 0.5223
+model saved at save_path/TLSAN--50000
+Epoch 7 Global_step 51000       Train_loss: 0.5046      Eval_auc: 0.9258
+Precision:
+@1 = 0.0641 @10 = 0.0246 @20 = 0.0175 @30 = 0.0142 @40 = 0.0120 @50 = 0.0105
+Recall:
+@1 = 0.0641 @10 = 0.2464 @20 = 0.3505 @30 = 0.4250 @40 = 0.4791 @50 = 0.5253
+Epoch 7 DONE    Cost time: 417.08
+Epoch 8 Global_step 52000       Train_loss: 0.4953      Eval_auc: 0.9268
+Precision:
+@1 = 0.0653 @10 = 0.0249 @20 = 0.0177 @30 = 0.0143 @40 = 0.0120 @50 = 0.0106
+Recall:
+@1 = 0.0653 @10 = 0.2493 @20 = 0.3533 @30 = 0.4279 @40 = 0.4818 @50 = 0.5280
+Epoch 8 Global_step 53000       Train_loss: 0.4762      Eval_auc: 0.9295
+Precision:
+@1 = 0.0671 @10 = 0.0252 @20 = 0.0178 @30 = 0.0144 @40 = 0.0121 @50 = 0.0106
+Recall:
+@1 = 0.0671 @10 = 0.2524 @20 = 0.3567 @30 = 0.4312 @40 = 0.4851 @50 = 0.5312
+Epoch 8 Global_step 54000       Train_loss: 0.4847      Eval_auc: 0.9296
+Precision:
+@1 = 0.0686 @10 = 0.0256 @20 = 0.0180 @30 = 0.0145 @40 = 0.0122 @50 = 0.0107
+Recall:
+@1 = 0.0686 @10 = 0.2557 @20 = 0.3599 @30 = 0.4343 @40 = 0.4882 @50 = 0.5341
+model saved at save_path/TLSAN--54000
+Epoch 8 Global_step 55000       Train_loss: 0.4837      Eval_auc: 0.9258
+Precision:
+@1 = 0.0698 @10 = 0.0258 @20 = 0.0181 @30 = 0.0146 @40 = 0.0123 @50 = 0.0107
+Recall:
+@1 = 0.0698 @10 = 0.2585 @20 = 0.3629 @30 = 0.4372 @40 = 0.4910 @50 = 0.5366
+Epoch 8 Global_step 56000       Train_loss: 0.4928      Eval_auc: 0.9284
+Precision:
+@1 = 0.0710 @10 = 0.0261 @20 = 0.0183 @30 = 0.0147 @40 = 0.0123 @50 = 0.0108
+Recall:
+@1 = 0.0710 @10 = 0.2612 @20 = 0.3658 @30 = 0.4401 @40 = 0.4937 @50 = 0.5392
+Epoch 8 Global_step 57000       Train_loss: 0.5053      Eval_auc: 0.9313
+Precision:
+@1 = 0.0729 @10 = 0.0265 @20 = 0.0185 @30 = 0.0148 @40 = 0.0124 @50 = 0.0108
+Recall:
+@1 = 0.0729 @10 = 0.2646 @20 = 0.3691 @30 = 0.4432 @40 = 0.4968 @50 = 0.5420
+model saved at save_path/TLSAN--57000
+Epoch 8 Global_step 58000       Train_loss: 0.5044      Eval_auc: 0.9307
+Precision:
+@1 = 0.0742 @10 = 0.0268 @20 = 0.0186 @30 = 0.0149 @40 = 0.0125 @50 = 0.0109
+Recall:
+@1 = 0.0742 @10 = 0.2676 @20 = 0.3722 @30 = 0.4461 @40 = 0.4995 @50 = 0.5446
+Epoch 8 DONE    Cost time: 469.71
+Epoch 9 Global_step 59000       Train_loss: 0.4750      Eval_auc: 0.9251
+Precision:
+@1 = 0.0740 @10 = 0.0270 @20 = 0.0187 @30 = 0.0149 @40 = 0.0125 @50 = 0.0109
+Recall:
+@1 = 0.0740 @10 = 0.2695 @20 = 0.3743 @30 = 0.4483 @40 = 0.5018 @50 = 0.5468
+Epoch 9 Global_step 60000       Train_loss: 0.4857      Eval_auc: 0.9287
+Precision:
+@1 = 0.0748 @10 = 0.0272 @20 = 0.0189 @30 = 0.0150 @40 = 0.0126 @50 = 0.0110
+Recall:
+@1 = 0.0748 @10 = 0.2722 @20 = 0.3772 @30 = 0.4511 @40 = 0.5043 @50 = 0.5492
+Epoch 9 Global_step 61000       Train_loss: 0.4962      Eval_auc: 0.9331
+Precision:
+@1 = 0.0760 @10 = 0.0275 @20 = 0.0190 @30 = 0.0151 @40 = 0.0127 @50 = 0.0110
+Recall:
+@1 = 0.0760 @10 = 0.2750 @20 = 0.3801 @30 = 0.4538 @40 = 0.5070 @50 = 0.5517
+model saved at save_path/TLSAN--61000
+Epoch 9 Global_step 62000       Train_loss: 0.4964      Eval_auc: 0.9321
+Precision:
+@1 = 0.0776 @10 = 0.0278 @20 = 0.0192 @30 = 0.0152 @40 = 0.0127 @50 = 0.0111
+Recall:
+@1 = 0.0776 @10 = 0.2780 @20 = 0.3831 @30 = 0.4566 @40 = 0.5095 @50 = 0.5540
+Epoch 9 Global_step 63000       Train_loss: 0.5026      Eval_auc: 0.9296
+Precision:
+@1 = 0.0792 @10 = 0.0281 @20 = 0.0193 @30 = 0.0153 @40 = 0.0128 @50 = 0.0111
+Recall:
+@1 = 0.0792 @10 = 0.2808 @20 = 0.3857 @30 = 0.4591 @40 = 0.5120 @50 = 0.5563
+Epoch 9 Global_step 64000       Train_loss: 0.5043      Eval_auc: 0.9345
+Precision:
+@1 = 0.0804 @10 = 0.0284 @20 = 0.0194 @30 = 0.0154 @40 = 0.0129 @50 = 0.0112
+Recall:
+@1 = 0.0804 @10 = 0.2836 @20 = 0.3884 @30 = 0.4616 @40 = 0.5144 @50 = 0.5586
+model saved at save_path/TLSAN--64000
+Epoch 9 DONE    Cost time: 520.44
+Epoch 10 Global_step 65000      Train_loss: 0.4893      Eval_auc: 0.9264
+Precision:
+@1 = 0.0819 @10 = 0.0286 @20 = 0.0195 @30 = 0.0155 @40 = 0.0129 @50 = 0.0112
+Recall:
+@1 = 0.0819 @10 = 0.2856 @20 = 0.3904 @30 = 0.4635 @40 = 0.5162 @50 = 0.5603
+Epoch 10 Global_step 66000      Train_loss: 0.4761      Eval_auc: 0.9270
+Precision:
+@1 = 0.0838 @10 = 0.0288 @20 = 0.0196 @30 = 0.0155 @40 = 0.0130 @50 = 0.0112
+Recall:
+@1 = 0.0838 @10 = 0.2881 @20 = 0.3928 @30 = 0.4656 @40 = 0.5182 @50 = 0.5621
+Epoch 10 Global_step 67000      Train_loss: 0.4830      Eval_auc: 0.9332
+Precision:
+@1 = 0.0852 @10 = 0.0291 @20 = 0.0198 @30 = 0.0156 @40 = 0.0130 @50 = 0.0113
+Recall:
+@1 = 0.0852 @10 = 0.2908 @20 = 0.3954 @30 = 0.4680 @40 = 0.5205 @50 = 0.5642
+Epoch 10 Global_step 68000      Train_loss: 0.5063      Eval_auc: 0.9345
+Precision:
+@1 = 0.0866 @10 = 0.0294 @20 = 0.0199 @30 = 0.0157 @40 = 0.0131 @50 = 0.0113
+Recall:
+@1 = 0.0866 @10 = 0.2937 @20 = 0.3981 @30 = 0.4705 @40 = 0.5229 @50 = 0.5664
+Epoch 10 Global_step 69000      Train_loss: 0.5065      Eval_auc: 0.9348
+Precision:
+@1 = 0.0879 @10 = 0.0297 @20 = 0.0200 @30 = 0.0158 @40 = 0.0131 @50 = 0.0114
+Recall:
+@1 = 0.0879 @10 = 0.2967 @20 = 0.4010 @30 = 0.4731 @40 = 0.5252 @50 = 0.5686
+model saved at save_path/TLSAN--69000
+Epoch 10 Global_step 70000      Train_loss: 0.5203      Eval_auc: 0.9310
+Precision:
+@1 = 0.0884 @10 = 0.0299 @20 = 0.0202 @30 = 0.0158 @40 = 0.0132 @50 = 0.0114
+Recall:
+@1 = 0.0884 @10 = 0.2993 @20 = 0.4035 @30 = 0.4754 @40 = 0.5274 @50 = 0.5705
+Epoch 10 Global_step 71000      Train_loss: 0.5224      Eval_auc: 0.9378
+Precision:
+@1 = 0.0898 @10 = 0.0302 @20 = 0.0203 @30 = 0.0159 @40 = 0.0132 @50 = 0.0115
+Recall:
+@1 = 0.0898 @10 = 0.3021 @20 = 0.4062 @30 = 0.4779 @40 = 0.5296 @50 = 0.5726
+model saved at save_path/TLSAN--71000
+Epoch 10 DONE   Cost time: 573.48
+Epoch 11 Global_step 72000      Train_loss: 0.4918      Eval_auc: 0.9371
+Precision:
+@1 = 0.0906 @10 = 0.0305 @20 = 0.0204 @30 = 0.0160 @40 = 0.0133 @50 = 0.0115
+Recall:
+@1 = 0.0906 @10 = 0.3047 @20 = 0.4086 @30 = 0.4800 @40 = 0.5317 @50 = 0.5745
+Epoch 11 Global_step 73000      Train_loss: 0.5008      Eval_auc: 0.9350
+Precision:
+@1 = 0.0917 @10 = 0.0307 @20 = 0.0205 @30 = 0.0161 @40 = 0.0133 @50 = 0.0115
+Recall:
+@1 = 0.0917 @10 = 0.3070 @20 = 0.4108 @30 = 0.4822 @40 = 0.5337 @50 = 0.5764
+Epoch 11 Global_step 74000      Train_loss: 0.5039      Eval_auc: 0.9340
+Precision:
+@1 = 0.0928 @10 = 0.0309 @20 = 0.0207 @30 = 0.0161 @40 = 0.0134 @50 = 0.0116
+Recall:
+@1 = 0.0928 @10 = 0.3093 @20 = 0.4131 @30 = 0.4843 @40 = 0.5356 @50 = 0.5782
+Epoch 11 Global_step 75000      Train_loss: 0.5075      Eval_auc: 0.9383
+Precision:
+@1 = 0.0948 @10 = 0.0312 @20 = 0.0208 @30 = 0.0162 @40 = 0.0134 @50 = 0.0116
+Recall:
+@1 = 0.0948 @10 = 0.3121 @20 = 0.4155 @30 = 0.4864 @40 = 0.5376 @50 = 0.5800
+model saved at save_path/TLSAN--75000
+Epoch 11 Global_step 76000      Train_loss: 0.5127      Eval_auc: 0.9408
+Precision:
+@1 = 0.0972 @10 = 0.0315 @20 = 0.0209 @30 = 0.0163 @40 = 0.0135 @50 = 0.0116
+Recall:
+@1 = 0.0972 @10 = 0.3146 @20 = 0.4177 @30 = 0.4885 @40 = 0.5396 @50 = 0.5819
+model saved at save_path/TLSAN--76000
+Epoch 11 Global_step 77000      Train_loss: 0.5453      Eval_auc: 0.9385
+Precision:
+@1 = 0.0982 @10 = 0.0317 @20 = 0.0210 @30 = 0.0164 @40 = 0.0135 @50 = 0.0117
+Recall:
+@1 = 0.0982 @10 = 0.3172 @20 = 0.4200 @30 = 0.4905 @40 = 0.5415 @50 = 0.5837
+Epoch 11 DONE   Cost time: 624.16
+Epoch 12 Global_step 78000      Train_loss: 0.5170      Eval_auc: 0.9359
+Precision:
+@1 = 0.0993 @10 = 0.0319 @20 = 0.0211 @30 = 0.0164 @40 = 0.0136 @50 = 0.0117
+Recall:
+@1 = 0.0993 @10 = 0.3194 @20 = 0.4220 @30 = 0.4923 @40 = 0.5432 @50 = 0.5853
+Epoch 12 Global_step 79000      Train_loss: 0.4988      Eval_auc: 0.9364
+Precision:
+@1 = 0.1001 @10 = 0.0321 @20 = 0.0212 @30 = 0.0165 @40 = 0.0136 @50 = 0.0117
+Recall:
+@1 = 0.1001 @10 = 0.3214 @20 = 0.4241 @30 = 0.4942 @40 = 0.5450 @50 = 0.5870
+Epoch 12 Global_step 80000      Train_loss: 0.5128      Eval_auc: 0.9356
+Precision:
+@1 = 0.1012 @10 = 0.0324 @20 = 0.0213 @30 = 0.0165 @40 = 0.0137 @50 = 0.0118
+Recall:
+@1 = 0.1012 @10 = 0.3238 @20 = 0.4262 @30 = 0.4961 @40 = 0.5468 @50 = 0.5887
+Epoch 12 Global_step 81000      Train_loss: 0.5161      Eval_auc: 0.9408
+Precision:
+@1 = 0.1031 @10 = 0.0326 @20 = 0.0214 @30 = 0.0166 @40 = 0.0137 @50 = 0.0118
+Recall:
+@1 = 0.1031 @10 = 0.3262 @20 = 0.4284 @30 = 0.4981 @40 = 0.5487 @50 = 0.5904
+Epoch 12 Global_step 82000      Train_loss: 0.5202      Eval_auc: 0.9410
+Precision:
+@1 = 0.1049 @10 = 0.0329 @20 = 0.0215 @30 = 0.0167 @40 = 0.0138 @50 = 0.0118
+Recall:
+@1 = 0.1049 @10 = 0.3288 @20 = 0.4309 @30 = 0.5003 @40 = 0.5507 @50 = 0.5923
+model saved at save_path/TLSAN--82000
+Epoch 12 Global_step 83000      Train_loss: 0.5255      Eval_auc: 0.9426
+Precision:
+@1 = 0.1070 @10 = 0.0331 @20 = 0.0217 @30 = 0.0167 @40 = 0.0138 @50 = 0.0119
+Recall:
+@1 = 0.1070 @10 = 0.3314 @20 = 0.4331 @30 = 0.5023 @40 = 0.5526 @50 = 0.5941
+model saved at save_path/TLSAN--83000
+Epoch 12 Global_step 84000      Train_loss: 0.5171      Eval_auc: 0.9389
+Precision:
+@1 = 0.1085 @10 = 0.0334 @20 = 0.0218 @30 = 0.0168 @40 = 0.0139 @50 = 0.0119
+Recall:
+@1 = 0.1085 @10 = 0.3335 @20 = 0.4350 @30 = 0.5041 @40 = 0.5543 @50 = 0.5955
+Epoch 12 DONE   Cost time: 677.46
+Epoch 13 Global_step 85000      Train_loss: 0.4880      Eval_auc: 0.9391
+Precision:
+@1 = 0.1091 @10 = 0.0336 @20 = 0.0219 @30 = 0.0169 @40 = 0.0139 @50 = 0.0119
+Recall:
+@1 = 0.1091 @10 = 0.3356 @20 = 0.4370 @30 = 0.5060 @40 = 0.5559 @50 = 0.5971
+Epoch 13 Global_step 86000      Train_loss: 0.4887      Eval_auc: 0.9408
+Precision:
+@1 = 0.1105 @10 = 0.0338 @20 = 0.0219 @30 = 0.0169 @40 = 0.0139 @50 = 0.0120
+Recall:
+@1 = 0.1105 @10 = 0.3377 @20 = 0.4390 @30 = 0.5078 @40 = 0.5576 @50 = 0.5987
+Epoch 13 Global_step 87000      Train_loss: 0.4992      Eval_auc: 0.9473
+Precision:
+@1 = 0.1127 @10 = 0.0340 @20 = 0.0221 @30 = 0.0170 @40 = 0.0140 @50 = 0.0120
+Recall:
+@1 = 0.1127 @10 = 0.3402 @20 = 0.4412 @30 = 0.5098 @40 = 0.5595 @50 = 0.6004
+model saved at save_path/TLSAN--87000
+Epoch 13 Global_step 88000      Train_loss: 0.5088      Eval_auc: 0.9451
+Precision:
+@1 = 0.1145 @10 = 0.0343 @20 = 0.0222 @30 = 0.0171 @40 = 0.0140 @50 = 0.0120
+Recall:
+@1 = 0.1145 @10 = 0.3426 @20 = 0.4433 @30 = 0.5116 @40 = 0.5612 @50 = 0.6020
+Epoch 13 Global_step 89000      Train_loss: 0.5102      Eval_auc: 0.9485
+Precision:
+@1 = 0.1165 @10 = 0.0345 @20 = 0.0223 @30 = 0.0171 @40 = 0.0141 @50 = 0.0121
+Recall:
+@1 = 0.1165 @10 = 0.3451 @20 = 0.4456 @30 = 0.5137 @40 = 0.5631 @50 = 0.6038
+model saved at save_path/TLSAN--89000
+Epoch 13 Global_step 90000      Train_loss: 0.5241      Eval_auc: 0.9410
+Precision:
+@1 = 0.1171 @10 = 0.0347 @20 = 0.0224 @30 = 0.0172 @40 = 0.0141 @50 = 0.0121
+Recall:
+@1 = 0.1171 @10 = 0.3472 @20 = 0.4475 @30 = 0.5155 @40 = 0.5647 @50 = 0.6053
+Epoch 13 DONE   Cost time: 728.35
+Epoch 14 Global_step 91000      Train_loss: 0.5251      Eval_auc: 0.9403
+Precision:
+@1 = 0.1183 @10 = 0.0349 @20 = 0.0225 @30 = 0.0172 @40 = 0.0142 @50 = 0.0121
+Recall:
+@1 = 0.1183 @10 = 0.3490 @20 = 0.4493 @30 = 0.5171 @40 = 0.5663 @50 = 0.6067
+Epoch 14 Global_step 92000      Train_loss: 0.5270      Eval_auc: 0.9440
+Precision:
+@1 = 0.1195 @10 = 0.0351 @20 = 0.0226 @30 = 0.0173 @40 = 0.0142 @50 = 0.0122
+Recall:
+@1 = 0.1195 @10 = 0.3512 @20 = 0.4512 @30 = 0.5188 @40 = 0.5678 @50 = 0.6082
+Epoch 14 Global_step 93000      Train_loss: 0.5261      Eval_auc: 0.9411
+Precision:
+@1 = 0.1211 @10 = 0.0353 @20 = 0.0227 @30 = 0.0173 @40 = 0.0142 @50 = 0.0122
+Recall:
+@1 = 0.1211 @10 = 0.3532 @20 = 0.4531 @30 = 0.5205 @40 = 0.5694 @50 = 0.6096
+Epoch 14 Global_step 94000      Train_loss: 0.5311      Eval_auc: 0.9479
+Precision:
+@1 = 0.1231 @10 = 0.0356 @20 = 0.0228 @30 = 0.0174 @40 = 0.0143 @50 = 0.0122
+Recall:
+@1 = 0.1231 @10 = 0.3555 @20 = 0.4551 @30 = 0.5223 @40 = 0.5711 @50 = 0.6112
+Epoch 14 Global_step 95000      Train_loss: 0.5353      Eval_auc: 0.9440
+Precision:
+@1 = 0.1240 @10 = 0.0358 @20 = 0.0229 @30 = 0.0175 @40 = 0.0143 @50 = 0.0123
+Recall:
+@1 = 0.1240 @10 = 0.3577 @20 = 0.4571 @30 = 0.5241 @40 = 0.5727 @50 = 0.6126
+Epoch 14 Global_step 96000      Train_loss: 0.5360      Eval_auc: 0.9474
+Precision:
+@1 = 0.1252 @10 = 0.0360 @20 = 0.0230 @30 = 0.0175 @40 = 0.0144 @50 = 0.0123
+Recall:
+@1 = 0.1252 @10 = 0.3601 @20 = 0.4591 @30 = 0.5259 @40 = 0.5744 @50 = 0.6142
+Epoch 14 Global_step 97000      Train_loss: 0.5384      Eval_auc: 0.9439
+Precision:
+@1 = 0.1267 @10 = 0.0362 @20 = 0.0230 @30 = 0.0176 @40 = 0.0144 @50 = 0.0123
+Recall:
+@1 = 0.1267 @10 = 0.3621 @20 = 0.4608 @30 = 0.5275 @40 = 0.5760 @50 = 0.6157
+Epoch 14 DONE   Cost time: 778.76
+Epoch 15 Global_step 98000      Train_loss: 0.5145      Eval_auc: 0.9480
+Precision:
+@1 = 0.1278 @10 = 0.0364 @20 = 0.0231 @30 = 0.0176 @40 = 0.0144 @50 = 0.0123
+Recall:
+@1 = 0.1278 @10 = 0.3640 @20 = 0.4626 @30 = 0.5292 @40 = 0.5775 @50 = 0.6172
+Epoch 15 Global_step 99000      Train_loss: 0.5253      Eval_auc: 0.9396
+Precision:
+@1 = 0.1292 @10 = 0.0366 @20 = 0.0232 @30 = 0.0177 @40 = 0.0145 @50 = 0.0124
+Recall:
+@1 = 0.1292 @10 = 0.3657 @20 = 0.4641 @30 = 0.5306 @40 = 0.5789 @50 = 0.6184
+Epoch 15 Global_step 100000     Train_loss: 0.5306      Eval_auc: 0.9436
+Precision:
+@1 = 0.1308 @10 = 0.0368 @20 = 0.0233 @30 = 0.0177 @40 = 0.0145 @50 = 0.0124
+Recall:
+@1 = 0.1308 @10 = 0.3677 @20 = 0.4658 @30 = 0.5320 @40 = 0.5802 @50 = 0.6198
+Epoch 15 Global_step 101000     Train_loss: 0.5333      Eval_auc: 0.9457
+Precision:
+@1 = 0.1322 @10 = 0.0370 @20 = 0.0234 @30 = 0.0178 @40 = 0.0145 @50 = 0.0124
+Recall:
+@1 = 0.1322 @10 = 0.3696 @20 = 0.4675 @30 = 0.5336 @40 = 0.5817 @50 = 0.6211
+Epoch 15 Global_step 102000     Train_loss: 0.5361      Eval_auc: 0.9457
+Precision:
+@1 = 0.1338 @10 = 0.0372 @20 = 0.0235 @30 = 0.0178 @40 = 0.0146 @50 = 0.0124
+Recall:
+@1 = 0.1338 @10 = 0.3715 @20 = 0.4693 @30 = 0.5352 @40 = 0.5832 @50 = 0.6225
+Epoch 15 Global_step 103000     Train_loss: 0.5432      Eval_auc: 0.9504
+Precision:
+@1 = 0.1355 @10 = 0.0374 @20 = 0.0236 @30 = 0.0179 @40 = 0.0146 @50 = 0.0125
+Recall:
+@1 = 0.1355 @10 = 0.3737 @20 = 0.4712 @30 = 0.5369 @40 = 0.5847 @50 = 0.6238
+model saved at save_path/TLSAN--103000
+Epoch 15 DONE   Cost time: 828.19
+Epoch 16 Global_step 104000     Train_loss: 0.5157      Eval_auc: 0.9451
+Precision:
+@1 = 0.1367 @10 = 0.0375 @20 = 0.0236 @30 = 0.0179 @40 = 0.0146 @50 = 0.0125
+Recall:
+@1 = 0.1367 @10 = 0.3753 @20 = 0.4726 @30 = 0.5381 @40 = 0.5859 @50 = 0.6249
+Epoch 16 Global_step 105000     Train_loss: 0.5068      Eval_auc: 0.9476
+Precision:
+@1 = 0.1381 @10 = 0.0377 @20 = 0.0237 @30 = 0.0180 @40 = 0.0147 @50 = 0.0125
+Recall:
+@1 = 0.1381 @10 = 0.3773 @20 = 0.4743 @30 = 0.5396 @40 = 0.5873 @50 = 0.6262
+Epoch 16 Global_step 106000     Train_loss: 0.5094      Eval_auc: 0.9415
+Precision:
+@1 = 0.1396 @10 = 0.0379 @20 = 0.0238 @30 = 0.0180 @40 = 0.0147 @50 = 0.0125
+Recall:
+@1 = 0.1396 @10 = 0.3789 @20 = 0.4756 @30 = 0.5409 @40 = 0.5884 @50 = 0.6272
+Epoch 16 Global_step 107000     Train_loss: 0.5134      Eval_auc: 0.9468
+Precision:
+@1 = 0.1413 @10 = 0.0381 @20 = 0.0239 @30 = 0.0181 @40 = 0.0147 @50 = 0.0126
+Recall:
+@1 = 0.1413 @10 = 0.3807 @20 = 0.4772 @30 = 0.5423 @40 = 0.5896 @50 = 0.6284
+Epoch 16 Global_step 108000     Train_loss: 0.5214      Eval_auc: 0.9470
+Precision:
+@1 = 0.1435 @10 = 0.0383 @20 = 0.0239 @30 = 0.0181 @40 = 0.0148 @50 = 0.0126
+Recall:
+@1 = 0.1435 @10 = 0.3826 @20 = 0.4788 @30 = 0.5436 @40 = 0.5909 @50 = 0.6295
+Epoch 16 Global_step 109000     Train_loss: 0.5256      Eval_auc: 0.9460
+Precision:
+@1 = 0.1449 @10 = 0.0384 @20 = 0.0240 @30 = 0.0182 @40 = 0.0148 @50 = 0.0126
+Recall:
+@1 = 0.1449 @10 = 0.3845 @20 = 0.4804 @30 = 0.5451 @40 = 0.5922 @50 = 0.6308
+Epoch 16 DONE   Cost time: 876.11
+Epoch 17 Global_step 110000     Train_loss: 0.5278      Eval_auc: 0.9428
+Precision:
+@1 = 0.1461 @10 = 0.0386 @20 = 0.0241 @30 = 0.0182 @40 = 0.0148 @50 = 0.0126
+Recall:
+@1 = 0.1461 @10 = 0.3861 @20 = 0.4818 @30 = 0.5463 @40 = 0.5934 @50 = 0.6318
+Epoch 17 Global_step 111000     Train_loss: 0.4933      Eval_auc: 0.9427
+Precision:
+@1 = 0.1471 @10 = 0.0388 @20 = 0.0242 @30 = 0.0183 @40 = 0.0149 @50 = 0.0127
+Recall:
+@1 = 0.1471 @10 = 0.3876 @20 = 0.4832 @30 = 0.5475 @40 = 0.5945 @50 = 0.6329
+Epoch 17 Global_step 112000     Train_loss: 0.5118      Eval_auc: 0.9461
+Precision:
+@1 = 0.1482 @10 = 0.0389 @20 = 0.0242 @30 = 0.0183 @40 = 0.0149 @50 = 0.0127
+Recall:
+@1 = 0.1482 @10 = 0.3892 @20 = 0.4845 @30 = 0.5487 @40 = 0.5956 @50 = 0.6339
+Epoch 17 Global_step 113000     Train_loss: 0.5226      Eval_auc: 0.9446
+Precision:
+@1 = 0.1499 @10 = 0.0391 @20 = 0.0243 @30 = 0.0183 @40 = 0.0149 @50 = 0.0127
+Recall:
+@1 = 0.1499 @10 = 0.3907 @20 = 0.4857 @30 = 0.5498 @40 = 0.5966 @50 = 0.6348
+Epoch 17 Global_step 114000     Train_loss: 0.5236      Eval_auc: 0.9485
+Precision:
+@1 = 0.1507 @10 = 0.0392 @20 = 0.0244 @30 = 0.0184 @40 = 0.0149 @50 = 0.0127
+Recall:
+@1 = 0.1507 @10 = 0.3923 @20 = 0.4872 @30 = 0.5511 @40 = 0.5978 @50 = 0.6360
+Epoch 17 Global_step 115000     Train_loss: 0.5282      Eval_auc: 0.9485
+Precision:
+@1 = 0.1520 @10 = 0.0394 @20 = 0.0244 @30 = 0.0184 @40 = 0.0150 @50 = 0.0127
+Recall:
+@1 = 0.1520 @10 = 0.3940 @20 = 0.4887 @30 = 0.5524 @40 = 0.5990 @50 = 0.6371
+Epoch 17 Global_step 116000     Train_loss: 0.5310      Eval_auc: 0.9445
+Precision:
+@1 = 0.1532 @10 = 0.0395 @20 = 0.0245 @30 = 0.0184 @40 = 0.0150 @50 = 0.0128
+Recall:
+@1 = 0.1532 @10 = 0.3955 @20 = 0.4899 @30 = 0.5535 @40 = 0.6000 @50 = 0.6380
+Epoch 17 DONE   Cost time: 926.50
+Epoch 18 Global_step 117000     Train_loss: 0.5114      Eval_auc: 0.9430
+Precision:
+@1 = 0.1544 @10 = 0.0397 @20 = 0.0245 @30 = 0.0185 @40 = 0.0150 @50 = 0.0128
+Recall:
+@1 = 0.1544 @10 = 0.3967 @20 = 0.4910 @30 = 0.5545 @40 = 0.6010 @50 = 0.6389
+Epoch 18 Global_step 118000     Train_loss: 0.5011      Eval_auc: 0.9493
+Precision:
+@1 = 0.1561 @10 = 0.0398 @20 = 0.0246 @30 = 0.0185 @40 = 0.0151 @50 = 0.0128
+Recall:
+@1 = 0.1561 @10 = 0.3982 @20 = 0.4924 @30 = 0.5557 @40 = 0.6021 @50 = 0.6399
+Epoch 18 Global_step 119000     Train_loss: 0.5116      Eval_auc: 0.9461
+Precision:
+@1 = 0.1576 @10 = 0.0400 @20 = 0.0247 @30 = 0.0186 @40 = 0.0151 @50 = 0.0128
+Recall:
+@1 = 0.1576 @10 = 0.3997 @20 = 0.4937 @30 = 0.5569 @40 = 0.6032 @50 = 0.6409
+Epoch 18 Global_step 120000     Train_loss: 0.5265      Eval_auc: 0.9486
+Precision:
+@1 = 0.1591 @10 = 0.0401 @20 = 0.0248 @30 = 0.0186 @40 = 0.0151 @50 = 0.0128
+Recall:
+@1 = 0.1591 @10 = 0.4014 @20 = 0.4952 @30 = 0.5582 @40 = 0.6043 @50 = 0.6419
+Epoch 18 Global_step 121000     Train_loss: 0.5256      Eval_auc: 0.9433
+Precision:
+@1 = 0.1604 @10 = 0.0403 @20 = 0.0248 @30 = 0.0186 @40 = 0.0151 @50 = 0.0129
+Recall:
+@1 = 0.1604 @10 = 0.4028 @20 = 0.4964 @30 = 0.5593 @40 = 0.6053 @50 = 0.6428
+Epoch 18 Global_step 122000     Train_loss: 0.5235      Eval_auc: 0.9490
+Precision:
+@1 = 0.1620 @10 = 0.0404 @20 = 0.0249 @30 = 0.0187 @40 = 0.0152 @50 = 0.0129
+Recall:
+@1 = 0.1620 @10 = 0.4044 @20 = 0.4978 @30 = 0.5605 @40 = 0.6064 @50 = 0.6438
+Epoch 18 DONE   Cost time: 974.32
+Epoch 19 Global_step 123000     Train_loss: 0.5238      Eval_auc: 0.9432
+Precision:
+@1 = 0.1630 @10 = 0.0406 @20 = 0.0249 @30 = 0.0187 @40 = 0.0152 @50 = 0.0129
+Recall:
+@1 = 0.1630 @10 = 0.4056 @20 = 0.4988 @30 = 0.5614 @40 = 0.6073 @50 = 0.6446
+Epoch 19 Global_step 124000     Train_loss: 0.4925      Eval_auc: 0.9468
+Precision:
+@1 = 0.1645 @10 = 0.0407 @20 = 0.0250 @30 = 0.0188 @40 = 0.0152 @50 = 0.0129
+Recall:
+@1 = 0.1645 @10 = 0.4070 @20 = 0.5001 @30 = 0.5626 @40 = 0.6084 @50 = 0.6456
+Epoch 19 Global_step 125000     Train_loss: 0.5070      Eval_auc: 0.9451
+Precision:
+@1 = 0.1657 @10 = 0.0408 @20 = 0.0251 @30 = 0.0188 @40 = 0.0152 @50 = 0.0129
+Recall:
+@1 = 0.1657 @10 = 0.4085 @20 = 0.5013 @30 = 0.5637 @40 = 0.6094 @50 = 0.6465
+Epoch 19 Global_step 126000     Train_loss: 0.5200      Eval_auc: 0.9465
+Precision:
+@1 = 0.1671 @10 = 0.0410 @20 = 0.0251 @30 = 0.0188 @40 = 0.0153 @50 = 0.0129
+Recall:
+@1 = 0.1671 @10 = 0.4099 @20 = 0.5026 @30 = 0.5648 @40 = 0.6103 @50 = 0.6474
+Epoch 19 Global_step 127000     Train_loss: 0.5140      Eval_auc: 0.9508
+Precision:
+@1 = 0.1686 @10 = 0.0411 @20 = 0.0252 @30 = 0.0189 @40 = 0.0153 @50 = 0.0130
+Recall:
+@1 = 0.1686 @10 = 0.4113 @20 = 0.5039 @30 = 0.5659 @40 = 0.6114 @50 = 0.6483
+model saved at save_path/TLSAN--127000
+Epoch 19 Global_step 128000     Train_loss: 0.5230      Eval_auc: 0.9482
+Precision:
+@1 = 0.1699 @10 = 0.0413 @20 = 0.0253 @30 = 0.0189 @40 = 0.0153 @50 = 0.0130
+Recall:
+@1 = 0.1699 @10 = 0.4127 @20 = 0.5051 @30 = 0.5670 @40 = 0.6124 @50 = 0.6492
+Epoch 19 Global_step 129000     Train_loss: 0.5307      Eval_auc: 0.9514
+Precision:
+@1 = 0.1711 @10 = 0.0414 @20 = 0.0253 @30 = 0.0189 @40 = 0.0153 @50 = 0.0130
+Recall:
+@1 = 0.1711 @10 = 0.4142 @20 = 0.5065 @30 = 0.5683 @40 = 0.6135 @50 = 0.6502
+model saved at save_path/TLSAN--129000
+Epoch 19 DONE   Cost time: 1027.89
+model saved at save_path/TLSAN--129340
+Best test_auc: 0.9513674197384067
+Best precision:
+@1 = 0.1711 @10 = 0.0414 @20 = 0.0253 @30 = 0.0189 @40 = 0.0153 @50 = 0.0130
+Best recall:
+@1 = 0.1711 @10 = 0.4142 @20 = 0.5065 @30 = 0.5683 @40 = 0.6135 @50 = 0.6502
+Finished
