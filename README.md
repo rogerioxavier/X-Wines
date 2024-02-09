@@ -1,5 +1,5 @@
-![X-Wines Dataset](x-wine-logo.png)
-# X-Wines
+![X-Wines Dataset](x-wine-logo-100-color.png)
+# X-Wines Dataset
 A world wine dataset with 5-stars user ratings and web collaborative platform for wider free use.
 
 It offer a preprocessed, consistent and open data alternative for general use by softwares, especially in educational processes and research, through scientific experimentation about recommender systems and machine learning using neural networks.
