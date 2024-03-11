@@ -1,14 +1,30 @@
 ![X-Wines Dataset](x-wine-logo-100-color.png)
 # X-Wines Dataset
-A world wine dataset with 5-stars user ratings and web collaborative platform for wider free use.
+A world wine dataset with 5-stars user ratings and a web collaborative platform for wider free use.
 
-It offer a preprocessed, consistent and open data alternative for general use by softwares, especially in educational processes and research, through scientific experimentation about recommender systems and machine learning using neural networks.
+It offers a preprocessed, consistent, and open data alternative for general use by softwares, especially in educational processes and research, through scientific experimentation about recommender systems and machine learning using neural networks.
+
+### Contents:
+
+•	100,646 (100K) wine instances containing 17 selected attributes.<br>
+•	21,013,536 (21M) ratings 5-stars instances, containing date and value a 1–5 scale ⊂ {1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5}<br>
+•	1,056,079 (1M) anonymized users.<br>
+
+### Versions:
+
+There are 3 versions: Full ⊂ Slim ⊂ Test. 
+```
+Version     # Wines   # Wine Types    # Wine Countries   # Ratings      # Users   Multiple user-wine rating
+Test           100          6               17              1,000          636             No
+Slim         1,007          6               31            150,000       10,561             No
+Full       100,646          6               62         21,013,536    1,056,079             Yes
+```
 
 ### It is published for [download](Dataset/) in the Dataset folder.
 
 ### Citation Policy:
 If you publish material based on X-Wines dataset obtained from this or another repository, then, in your references the [paper](https://www.mdpi.com/2504-2289/7/1/20) below must be mandatory cited.
-Additionally, if you wish to include in your acknowledgements, please note the support you received by using this dataset.
+Additionally, if you wish to include in your acknowledgments, please note the support you received by using this dataset.
 
 <u>MDPI and ACS Style</u>:
 
