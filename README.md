@@ -23,8 +23,8 @@ Full       100,646          6               62         21,013,536    1,056,079  
 ### It is published for [download](Dataset/) in the Dataset folder.
 
 ### Citation Policy:
-If you publish material based on X-Wines dataset obtained from this or another repository, then, in your references the [paper](https://www.mdpi.com/2504-2289/7/1/20) below must be mandatory cited.
-Additionally, if you wish to include in your acknowledgments, please note the support you received by using this dataset.
+If you publish material based on X-Wines dataset obtained from this or another repository, then, in your references the [paper](https://www.mdpi.com/2504-2289/7/1/20) below must be mandatorily cited.
+Additionally, if you wish to include it in your acknowledgments, please note the support you received by using this dataset.
 
 <u>MDPI and ACS Style</u>:
 
